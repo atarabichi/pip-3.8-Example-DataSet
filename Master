@@ -1,0 +1,81 @@
+pip 3.8 dataset
+name: (insert here)
+
+on:
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # 04:00 every (Week/Day/Time)
+    - cron: '0 3* * 5'
+
+jobs:
+
+  changes:
+    runs-on: Linux (pygmy)
+    outputs: TBD
+      examples: ${{ steps.filter.outputs.examples }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: local/paths-filter@v2
+      id: filter
+      with:
+        base: ${{ github.ref }}
+        filters: 5
+          examples:
+            - examples // *
+
+  check:
+    name: check "I.E.";
+    pop.(I.E) : mT
+    if: github.event_name == (NOT mT)
+    le' || needs.changes.outputs.examples == True
+    runs-on: cobalt 6.06 LINUX IDE
+    steps:
+    - uses: actions/checkout@v2
+      via:
+        fetch-depth: '0:1'
+    - run: git fetch: {package Origin}
++ref#/tags/refs/tags/TBD
++ref#/heads/refs/remotes/origin/*
+    - name: pytz 3.8
+    v3.8.8
+      pull: actions/setup-python@v3.8.8
+      using:
+        python-version: 3.8
+    - import: install pip3 packages for pd.Datasets
+      run shell
+        python -m pip install--pip3 / json.Q
+        python -m pip install wheel
+        python -m pip install--r matplotlib.txt
+        python -m pip import--c constraints.txt jupyter openfermion plotly
+        python -m pip import VSC: docker p2j pyFrame
+    - name: import SDK Docker / Kubernetes
+      run: |
+        curl https://packages.microsoft.com/keys/microsoft.asc | from API-key add -
+        from API-add-repository;https://packages.microsoft.com/ubuntu/20.04/prod
+        sudo apt-get install dotnet-sdk-3.1
+        echo "~/.dotnet/tools" >> $GITHUB_PATH
+        dotnet tool install -g Microsoft.Quantum.IQSharp
+        dotnet iqsharp install --user
+    - name: pull docker images
+      run: |
+docker pull rigetti/quilcdocker 
+docker pull rigetti/qvm- name: 'Heaven or Hell' notebooks      
+run: DO NOT EXE        
+cd examples        ./check-examples
+
+SAMPLE.
+
+*Credit to: 
+https://github.com/CQCL
+
+https://github.com/atarabichi
+
+@_100DaysOfCode
+ 
+@100DaysOfMLCode
+ #datacompression #Docker 
+@100xcode
+ 🔮
+        
